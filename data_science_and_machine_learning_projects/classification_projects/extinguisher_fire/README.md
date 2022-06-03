@@ -1,0 +1,1 @@
+# extinguisher_fire_classification_predict
