@@ -1,0 +1,1 @@
+# fruit_type_classification_predict
