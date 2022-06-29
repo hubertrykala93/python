@@ -70,5 +70,8 @@ Class Deck has following methods:
   
   - if number of aces in user hand is equal to 2 and if user has only 2 cards, method returns 21 points,
   - if number of aces in user hand is equal to 1 and user has only 2 cards, method returns 10 points,
-  
-
+  - for loop iterating through all cards in user hand,
+    - if card is equal to Ace, user gets 1 point,
+    - if card is equal to Jack, Queen, King, user gets 10 points,
+    - otherwise if value card is equal to (1, 2, 3, 4, 5, 6, 7, 8, 9, 10) user gets equivalent to the value of the card.
+  - if sum of all user cards is greater than 21, game raises GameOverException error imported from exceptions.py
