@@ -12,7 +12,9 @@ The project includes:
 - player_test.py - test for player.py.
 
 
-Class Card:
+Module card.py:
+
+In this module class Card was created.
 
 Class Card constructor has following attributes:
 
@@ -31,7 +33,9 @@ Class Card has following methods:
 - def __repr__ - return the string representation of card. Method returns string.
 
 
-Class Deck:
+Module deck.py:
+
+In this module class Deck was created.
 
 At the top of this file was imported random library and Card class.
 
@@ -49,7 +53,9 @@ Class Deck has following methods:
 - def hit - discard the last card from list of cards. Method returns None.
 
 
-Class Player:
+Module player.py:
+
+In this module class Player was created.
 
 At the top of this file was imported Card class and GameOverException from exceptions.
 
@@ -77,7 +83,9 @@ Class Deck has following methods:
   - if sum of all user cards is greater than 21, game raises GameOverException error imported from exceptions.py
 
 
-Class Game:
+Module game.py:
+
+In this module class Game was created.
 
 At the top of this file was imported Player and Deck classes and GameOverException, GameOverUserException, GameOverCroupierException from exceptions.py.
 
@@ -85,4 +93,30 @@ Constructor of this class takes no attributes in __init__, only required self.
 
 Class Game has following attributes:
 
-- self.deck what is 
+- self.deck is a class Deck.
+
+Below deck is shuffled using def shuffle() method from Deck class.
+
+Class Game has following methods:
+
+- def print_menu - protected static method returns None - this method prints game menu.
+- def croupier_plays - also protected method with user_points parameter as integer, returns croupier points as integer.
+  In method body was created instance of Player class named croupier, while croupier points are less than user points croupier is taking card.
+- def user_playes - also protected method returns integer or None. Creating Player class instance, adding cards to player hands and printing by while loop   private static method 'menu' while the game not is over.
+- def play - playing game and checking results. Method returns None.
+
+
+Module exceptions.py:
+
+In this module were created five classes with exceptions for BlackJack Python Game.
+
+- class InvalidColor - inherets from Exception class. This exception is raising when class Card will be initialized with wrong card color.
+- class InvalidValue - inherets from Exception class. This exception is raising when class Card will be initialized with wrong card value.
+- class GameOverException - inherets from Exception class. This exception is raising when the game is over.
+- class GameOverUserException - inherets from Exception class. This exception is raising when user loss.
+- class GameOverCroupierException - inherets from Exception class. This exception is raising when croupier loss.
+
+
+Module main.py:
+
+Main module for BlackJack Python Game. Play and check if you will with croupier! Enjoy!
