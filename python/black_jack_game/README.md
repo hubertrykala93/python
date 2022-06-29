@@ -63,7 +63,11 @@ Class Deck has following methods:
 
 - def take_card - with parameter card as Card class. User draws card which is added to empty card list.
 - def calculate_points - method calculating users points. At the top of this method two variables was created.
-  points - calculate user points and number_of_aces - calculate aces in user hand. It method has also very important conditions:
+  - points - calculate user points
+  - number_of_aces - calculate aces in user hand.
+  
+  It method has also very important conditions:
+  
   In the first case - if number of aces in user hand is equal to 2 and if user has only 2 cards, method returns 21 points,
   In the second case - if number of aces in user hand is equal to 1 and user has only 2 cards, method returns 10 points,
   
