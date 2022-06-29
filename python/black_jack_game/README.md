@@ -68,7 +68,7 @@ Class Deck has following methods:
   
   It method has also very important conditions:
   
-  In the first case - if number of aces in user hand is equal to 2 and if user has only 2 cards, method returns 21 points,
-  In the second case - if number of aces in user hand is equal to 1 and user has only 2 cards, method returns 10 points,
+  - if number of aces in user hand is equal to 2 and if user has only 2 cards, method returns 21 points,
+  - if number of aces in user hand is equal to 1 and user has only 2 cards, method returns 10 points,
   
 
