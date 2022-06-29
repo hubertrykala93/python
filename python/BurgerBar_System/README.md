@@ -45,9 +45,9 @@ Have been imported also json library and class Menu from menu.py module.
 
 Class roll constructor has following attributes:
 
-- self.name (name of roll for order by user) as string,
-- self.quantity (quantity of roll for order by user) as integer with default parameter equal to 1.
+- self.name (name of roll that the user wants to order) as string,
+- self.quantity (quantity name of roll that the user wants to order) as integer with default parameter equal to 1.
 
-In the init method has been implemented validation for quantity attribute. If user will choose quantity less than 0, system will pop exception named NegativeValueError, if user will choose quantity equal to 0, system will pop exception named ZeroQuantityError, if user will choose quantity more than 1, system will pop exception named QuantityError.
+In the init method has been implemented validation for quantity attribute. If user will choose quantity less than 0, system will raise exception named NegativeValueError, if user will choose quantity equal to 0, system will raise exception named ZeroQuantityError, if user will choose quantity more than 1, system will raise exception named QuantityError.
 
-After placing the order by user. Quantity of chosen product will be reduced in menu. menu.json file will be updated.
+After placing the order by user quantity of chosen product will be reduced in menu. menu.json file will be updated.
