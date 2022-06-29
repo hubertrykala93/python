@@ -1,6 +1,6 @@
 Python Project of Black Jack Card Game.
 
-The project includes:
+This project includes:
 - card.py - initialization Card class,
 - deck.py - initialization Deck class,
 - game.py - initialization Game class,
