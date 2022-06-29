@@ -75,3 +75,14 @@ Class Deck has following methods:
     - if card is equal to Jack, Queen, King, user gets 10 points,
     - otherwise if value card is equal to (1, 2, 3, 4, 5, 6, 7, 8, 9, 10) user gets equivalent to the value of the card.
   - if sum of all user cards is greater than 21, game raises GameOverException error imported from exceptions.py
+
+
+Class Game:
+
+At the top of this file was imported Player and Deck classes and GameOverException, GameOverUserException, GameOverCroupierException from exceptions.py.
+
+Constructor of this class takes no attributes in __init__, only required self.
+
+Class Game has following attributes:
+
+- self.deck what is 
