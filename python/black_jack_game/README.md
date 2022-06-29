@@ -28,7 +28,7 @@ In the __init__ method has been implemented validation, which inform a user that
 
 Class Card has following methods:
 
-- def __repr__ - return the string representation of card.
+- def __repr__ - return the string representation of card. Method returns string.
 
 
 Class Deck:
@@ -45,8 +45,8 @@ Below was used nested for loop to generate all cards configurations. All of card
 
 Class Deck has following methods:
 
-- def shuffle - shuffle cards in list of cards.
-- def hit - discard the last card from list of cards.
+- def shuffle - shuffle cards in list of cards. Method returns None,
+- def hit - discard the last card from list of cards. Method returns None.
 
 
 Class Player:
@@ -61,8 +61,8 @@ Class Player has following attributes:
 
 Class Deck has following methods:
 
-- def take_card - with parameter card as Card class. User draws card which is added to empty card list.
-- def calculate_points - method calculating users points. At the top of this method two variables was created.
+- def take_card - takes a parameter card as Card class object and return None. User draws card which is added to empty card list.
+- def calculate_points - method calculating users points and return them as integer. At the top of this method two variables was created.
   - points - calculate user points
   - number_of_aces - calculate aces in user hand.
   
