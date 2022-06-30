@@ -188,3 +188,37 @@ Class Sauce has following methods:
 - def __repr__ - returns a string representation of Sauce object.
 
 After placing the order by user quantity of chosen product will be reduced in menu. menu.json file will be updated.
+
+
+Module shopping_card.py:
+
+In this module class ShoppingCard was created.
+
+Class ShoppingCard constructor has following attributes:
+
+- self.objects - list of objects (products) chosen by user,
+- self.to_pay - calculating price of burger.
+
+Class ShoppingCard has following methods:
+
+- def add_product - adding new component of burger to self.objects attribute also self.to_pay attribute is updated.
+- def products - property method, user can check what products is in shopping card,
+- def amount - property method, user can check what amount has to pay.
+
+
+Module exceptions.py:
+
+In this module were created eight classes with exceptions for BurgerBar System.
+
+- class NotExistingFile raise error when file with menu doesn't exist,
+- class CategoryUnavailableError raise error when category of product not in menu,
+- class ProductAvailableError raise error when product in menu when admin wants to add this product again,
+- class ProductUnavailableError raise error when name of product not in menu,
+- class ProductUnavailable raise error when name of product is not available,
+- class QuantityError raise error when user chose wrong quantity of product,
+- class ZeroQuantityError raise error when user chose product with quantity equal to zero,
+- class NegativeValueError raise error when user chose product with quantity less than zero.
+
+Module main.py:
+
+Main module for BurgerBar System. Run project and config your own burger! Enjoy!
