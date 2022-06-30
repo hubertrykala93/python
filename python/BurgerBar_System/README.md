@@ -12,7 +12,7 @@ This project includes:
 - cheese.py - initialization Cheese class,
 - ham.py - initialization Ham class,
 - sauce.py - initialization Sauce class,
-- shopping_card.py - initialization ShoppingCard class,
+- shopping_cart.py - initialization ShoppingCart class,
 - exceptions.py - exceptions for whole project.
 
 
@@ -190,19 +190,19 @@ Class Sauce has following methods:
 After placing the order by user quantity of chosen product will be reduced in menu. menu.json file will be updated.
 
 
-Module shopping_card.py:
+Module shopping_cart.py:
 
-In this module class ShoppingCard was created.
+In this module class ShoppingCart was created.
 
-Class ShoppingCard constructor has following attributes:
+Class ShoppingCart constructor has following attributes:
 
 - self.objects - list of objects (products) chosen by user,
 - self.to_pay - calculating price of burger.
 
-Class ShoppingCard has following methods:
+Class ShoppingCart has following methods:
 
 - def add_product - adding new component of burger to self.objects attribute also self.to_pay attribute is updated.
-- def products - property method, user can check what products is in shopping card,
+- def products - property method, user can check what products is in shopping cart,
 - def amount - property method, user can check what amount has to pay.
 
 
