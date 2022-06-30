@@ -43,11 +43,148 @@ In this module class Roll was created.
 At the top of this module have been imported exceptions like ProductUnavailableError, NegativeValueError, ZeroQuantityError, QuantityError, ProductUnavailable from exceptions.py module.
 Have been imported also json library and class Menu from menu.py module.
 
-Class roll constructor has following attributes:
+Class Roll constructor has following attributes:
 
-- self.name (name of roll that the user wants to order) as string,
-- self.quantity (quantity name of roll that the user wants to order) as integer with default parameter equal to 1.
+- self.name - name of roll that the user wants to order as string,
+- self.quantity - quantity name of roll that the user wants to order as integer with default parameter equal to 1.
 
-In the init method has been implemented validation for quantity attribute. If user will choose quantity less than 0, system will raise exception named NegativeValueError, if user will choose quantity equal to 0, system will raise exception named ZeroQuantityError, if user will choose quantity more than 1, system will raise exception named QuantityError.
+In the init method has been implemented validation for checking if product is available in menu, if not raise ProductUnavailableError.
+In the init method has been implemented another validation for quantity attribute. If user will choose quantity less than 0, system will raise exception named NegativeValueError, if user will choose quantity equal to 0, system will raise exception named ZeroQuantityError, if user will choose quantity more than 1, system will raise exception named QuantityError.
+
+Class Roll has following methods:
+
+- def __repr__ - returns a string representation of Roll object.
+
+After placing the order by user quantity of chosen product will be reduced in menu. menu.json file will be updated.
+
+
+Module meat.py:
+
+In this module class Meat was created.
+
+At the top of this module have been imported exceptions like ProductUnavailableError, NegativeValueError, ProductUnavailable from exceptions.py module.
+Have been imported also json library and class Menu from menu.py module.
+
+Class Meat constructor has following attributes:
+- self.name - name of meat that the user wants to order as string,
+- self.price - price of chosen name of product chosen by user.
+
+  In the init method has been implemented validation for checking if product is available in menu, if not raise ProductUnavailableError.
+  In the init method has been implemented another validation for quantity attribute. If user will choose quantity less than 0, system will raise exception
+  named NegativeValueError otherwise attribute self.quantity is created.
+  
+Class Meat has following methods:
+
+- def __repr__ - returns a string representation of Meat object.
+
+After placing the order by user quantity of chosen product will be reduced in menu. menu.json file will be updated.
+ 
+ 
+Module vegetable.py:
+
+In this module class Vegetable was created.
+
+At the top of this module have been imported exceptions like ProductUnavailableError, NegativeValueError, ProductUnavailable from exceptions.py module.
+Have been imported also json library and class Menu from menu.py module.
+
+Class Vegetable constructor has following attributes:
+- self.name - name of vegetable that the user wants to order as string,
+- self.price - price of chosen name of product chosen by user.
+
+  In the init method has been implemented validation for checking if product is available in menu, if not raise ProductUnavailableError.
+  In the init method has been implemented another validation for quantity attribute. If user will choose quantity less than 0, system will raise exception
+  named NegativeValueError otherwise attribute self.quantity is created.
+  
+Class Vegetable has following methods:
+
+- def __repr__ - returns a string representation of Vegetable object.
+
+After placing the order by user quantity of chosen product will be reduced in menu. menu.json file will be updated.
+
+
+Module fruit.py:
+
+In this module class Fruit was created.
+
+At the top of this module have been imported exceptions like ProductUnavailableError, NegativeValueError, ProductUnavailable from exceptions.py module.
+Have been imported also json library and class Menu from menu.py module.
+
+Class Fruit constructor has following attributes:
+- self.name - name of vegetable that the user wants to order as string,
+- self.price - price of chosen name of product chosen by user.
+
+  In the init method has been implemented validation for checking if product is available in menu, if not raise ProductUnavailableError.
+  In the init method has been implemented another validation for quantity attribute. If user will choose quantity less than 0, system will raise exception
+  named NegativeValueError otherwise attribute self.quantity is created.
+  
+Class Fruit has following methods:
+
+- def __repr__ - returns a string representation of Fruit object.
+
+After placing the order by user quantity of chosen product will be reduced in menu. menu.json file will be updated.
+
+
+Module cheese.py:
+
+In this module class Cheese was created.
+
+At the top of this module have been imported exceptions like ProductUnavailableError, NegativeValueError, ProductUnavailable from exceptions.py module.
+Have been imported also json library and class Menu from menu.py module.
+
+Class Cheese constructor has following attributes:
+- self.name - name of cheese that the user wants to order as string,
+- self.price - price of chosen name of product chosen by user.
+
+  In the init method has been implemented validation for checking if product is available in menu, if not raise ProductUnavailableError.
+  In the init method has been implemented another validation for quantity attribute. If user will choose quantity less than 0, system will raise exception
+  named NegativeValueError otherwise attribute self.quantity is created.
+  
+Class Cheese has following methods:
+
+- def __repr__ - returns a string representation of Cheese object.
+
+After placing the order by user quantity of chosen product will be reduced in menu. menu.json file will be updated.
+
+
+Module ham.py:
+
+In this module class Ham was created.
+
+At the top of this module have been imported exceptions like ProductUnavailableError, NegativeValueError, ProductUnavailable from exceptions.py module.
+Have been imported also json library and class Menu from menu.py module.
+
+Class Ham constructor has following attributes:
+- self.name - name of cheese that the user wants to order as string,
+- self.price - price of chosen name of product chosen by user.
+
+  In the init method has been implemented validation for checking if product is available in menu, if not raise ProductUnavailableError.
+  In the init method has been implemented another validation for quantity attribute. If user will choose quantity less than 0, system will raise exception
+  named NegativeValueError otherwise attribute self.quantity is created.
+  
+Class Ham has following methods:
+
+- def __repr__ - returns a string representation of Ham object.
+
+After placing the order by user quantity of chosen product will be reduced in menu. menu.json file will be updated.
+
+
+Module sauce.py:
+
+In this module class Sauce was created.
+
+At the top of this module have been imported exceptions like ProductUnavailableError, NegativeValueError, ProductUnavailable from exceptions.py module.
+Have been imported also json library and class Menu from menu.py module.
+
+Class Sauce constructor has following attributes:
+- self.name - name of cheese that the user wants to order as string,
+- self.price - price of chosen name of product chosen by user.
+
+  In the init method has been implemented validation for checking if product is available in menu, if not raise ProductUnavailableError.
+  In the init method has been implemented another validation for quantity attribute. If user will choose quantity less than 0, system will raise exception
+  named NegativeValueError otherwise attribute self.quantity is created.
+  
+Class Sauce has following methods:
+
+- def __repr__ - returns a string representation of Sauce object.
 
 After placing the order by user quantity of chosen product will be reduced in menu. menu.json file will be updated.
